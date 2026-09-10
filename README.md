@@ -1,17 +1,8 @@
-# React + Vite
+feat: add SVG icons for various platforms and create models.json for AI tools
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
-
-## React Compiler
-
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
-# ai-model-hub
+- Added SVG icons for Bluesky, Discord, Documentation, GitHub, Social, and X.
+- Created models.json containing details of popular AI tools including ChatGPT, Claude, Gemini, and others.
+- Initialized App component with basic structure and imported CSS.
+- Added hero image and React logo SVG assets.
+- Configured Vite with React and Tailwind CSS support.
+- Set up main entry point for the application.
