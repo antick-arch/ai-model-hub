@@ -1,20 +1,23 @@
-import React from 'react';
+import { useState } from 'react';
 
 const ModelCard = ({ model }) => {
+    const [isSubscribed, setSubscribe] = useState(false);
+    const handleSubscribe = () =>{
+        setSubscribe(true);
+    }
     return (
-       
             <div className="card bg-base-100 shadow-sm">
-                <figure className=''>
+                <figure className='bg-gray-100'>
                     <img
-                        className='w-50'
+                        className='w-50 h-50 p-5'
                         src={model.image}
                         alt={model.title} />
                 </figure>
                 <div className="card-body">
-                    <h2 className="card-title">Card Title</h2>
-                    <p>A card component has a figure, a body part, and inside body there are title and actions parts</p>
+                    <h2 className="card-title">{model.title}</h2>
+                    <p>{model.description}</p>
                     <div className="card-actions justify-end">
-                        <button className="btn btn-primary w-full">Buy Now</button>
+                        <button onClick={handleSubscribe} className="btn bg-[#FF0000] text-white w-full">{isSubscribed? "Subscribed":"Subscribe Now"}</button>
                     </div>
                 </div>
             </div>

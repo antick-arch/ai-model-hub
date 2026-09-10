@@ -16,6 +16,10 @@ function App() {
     <>
     <NavBar></NavBar>
     <Banner></Banner>
+<div className="tabs tabs-box justify-center bg-transparent">
+  <input type="radio" name="Models" className="tab" aria-label="Models"/>
+  <input type="radio" name="Cart" className="tab" aria-label="Cart"  />
+</div>
     <Suspense>
       <Model getModels={getModels}></Model>
     </Suspense>
