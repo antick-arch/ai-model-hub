@@ -14,7 +14,7 @@ const getModels = dataFetch()
 
 function App() {
   const [activeTab, setActiveTab] = useState("Model");
-  console.log(activeTab);
+  const [cart,setCart] = useState([]);
   return (
     <>
       <NavBar></NavBar>
@@ -24,9 +24,9 @@ function App() {
         <input type="radio" name="my_tabs_1" className="tab w-40 rounded-full" aria-label="Cart" onClick={() => setActiveTab("Cart")} />
       </div>
       {activeTab === "Model" && <Suspense>
-        <Model getModels={getModels}></Model>
+        <Model getModels={getModels} cart={cart} setCart={setCart}></Model>
       </Suspense>}
-      {activeTab === "Cart" && <Cart></Cart>}
+      {activeTab === "Cart" && <Cart cart={cart} setCart={setCart}></Cart>}
       <Footer></Footer>
     </>
   )
