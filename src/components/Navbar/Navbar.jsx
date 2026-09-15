@@ -24,7 +24,14 @@ const NavBar = () => {
         </ul>
       </div>
       <div className="navbar-end gap-5">
-        <a className="btn bg-red-500 rounded-full text-white">Get in Touch</a>
+        <a
+          href="https://github.com/login"
+          target="_blank"
+          rel="noreferrer"
+          className="btn bg-red-500 rounded-full text-white"
+        >
+          Login with GitHub
+        </a>
       </div>
     </div>
   );
